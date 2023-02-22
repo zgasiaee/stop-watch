@@ -1,0 +1,59 @@
+* , *::after , *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fea600;
+    font-family: sans-serif;
+}
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+}
+.textContainer .title{
+ font-size: 3.5em;
+ font-weight: 500;
+}
+.textContainer .time{
+  margin: 1.5em 0;
+  font-size: 2em;
+}
+.textContainer .buttonContainer{
+    display: flex;
+}
+.textContainer .buttonContainer button{
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-size: 1em;
+    padding: 1em 3em;
+    border-radius: 0.3em;
+    color: #fff;
+    margin: 0 0.5em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.textContainer .buttonContainer button:hover{
+    background-color: #fff;
+    color: #fea600;
+}
+
+@media only screen and (max-width:600px){
+    .textContainer .title{
+        font-size: 2.3em;
+    }
+    .textContainer .time{
+        font-size: 1.3em;
+    }
+    .textContainer .buttonContainer{
+        flex-direction: column;
+    }
+    .textContainer .buttonContainer button{
+        margin: 0.5em;
+        font-size: 0.85em;
+    }
+}
